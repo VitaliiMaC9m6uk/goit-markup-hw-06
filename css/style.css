@@ -405,7 +405,7 @@ img{
 }
 .footer-address{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .address-mail{
     margin-right: 70px;
