@@ -350,42 +350,43 @@
         </div>
       </section>
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal-window">
+        <div class="modal-window container-modal">
           <button class="btn-close" type="button" data-modal-close>
             <svg class="icon-close">
               <use href="./images/symbol-defs-first.svg#icon-x"></use>
             </svg>
           </button>
-          <h2>Залиште свої дані, ми вам передзвонимо</h2>
-          <ul>
-            <li>
+          <h2 class="titel-modal">Залиште свої дані, ми вам передзвонимо</h2>
+          <ul class="list">
+            <li class="list-form text-form">
               <label for="name-form" class="">Ім'я</label>
-              <input type="text"
-              id="name-form"
-              name="name"
-              class="name-form" />
+              <input type="text" id="name-form" name="name" class="name-form form-fild" />
             </li>
-            <li>
+            <li class="list-form text-form">
               <label for="tel-form" class="">Телефон</label>
-              <input type="tel"
-              id="tel-form"
-              name="tel"
-              class="tel-form" />
+              <input type="tel" id="tel-form" name="tel" class="tel-form form-fild" />
             </li>
-            <li>
+            <li class="list-form text-form">
               <label for="mail-form" class="">Пошта</label>
-              <input type="email"
-              id="mail-form"
-              name="mail"
-              class="mail-form" />
+              <input type="email" id="mail-form" name="mail" class="mail-form form-fild" />
+            </li>
+            <li class="list-form text-form">
+              <label for="comment" class="">Коментар</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Введіть текст"
+                class="comment-form"
+              ></textarea>
             </li>
           </ul>
-          <label for="comment" class="">Коментар</label>
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введіть текст" class="comment-form"></textarea>
-
-          <label for="" class=""></label>
-          <input type="checkbox"
-          id="checkbox"
+          <div>
+            <input type="checkbox" id="checkbox" name="checkbox" class="" />       
+            <label for="checkbox" class="">Погоджуюся з розсилкою та приймаю Умови договору</label>            
+          </div>
+          <button type="button" class="btn-form">Відправити</button>
         </div>
       </div>
     </main>
@@ -455,14 +456,15 @@
           <div class="feedback-footer">
             <div class="feedback-mail">
               <label for="mail-footer" class="form-call">Підпишіться на розсилку</label>
-              <input type="email" 
-              id="mail-footer" 
-              name="mail" 
-              class="form-fild" 
-              placeholder="E-mail" />
+              <input
+                type="email"
+                id="mail-footer"
+                name="mail"
+                class="form-fild"
+                placeholder="E-mail"
+              />
             </div>
-            <button type="button" class="btn-footer">
-              Підписатися</button>
+            <button type="button" class="btn-footer">Підписатися</button>
           </div>
         </form>
       </div>
