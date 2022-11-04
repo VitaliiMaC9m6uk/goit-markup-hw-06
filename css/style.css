@@ -770,6 +770,10 @@ img{
 
     padding: 6px;    
 }
+.btn-close:hover .icon-close,
+.btn-close:focus .icon-close{
+    fill: var(--logo-blue-color);
+}
 .titel-modal{    
     font-weight: 700;
     font-size: 20px;
@@ -860,8 +864,10 @@ img{
     font-weight: 400;
     font-size: 16px;
 }
-.input-form:focus{
-    border: 1px solid var(--logo-blue-color);
+.input-form:focus,
+.comment-form:focus{
+    outline: 1px solid #2196F3;
+        
 }
 .input-form:focus + .icon-form{
     fill:var(--logo-blue-color);
