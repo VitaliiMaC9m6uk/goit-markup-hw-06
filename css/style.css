@@ -770,12 +770,10 @@ img{
 
     padding: 6px;    
 }
-.titel-modal{
-    font-family: 'Roboto';
-    font-style: normal;
+.titel-modal{    
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     
@@ -784,9 +782,13 @@ img{
     padding: 0;
     margin: 0 0 12px 0;
 }
-.list-form{
-    display: flex;
+.form-person,
+.form-tel,
+.form-mail,
+.form-comment{  
+    display: flex;  
     flex-direction: column;
+    position: relative;
     margin-bottom: 10px;
 }
 .text-form{    
@@ -802,10 +804,12 @@ img{
     border-radius: 4px;
     padding-left: 30px;
 }
-.comment-form{
-    width: 448px;
+.form-comment{
+    margin-bottom:20px;
+}
+.comment-form{    
     height: 120px;
-
+    padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
@@ -831,4 +835,40 @@ img{
     border-radius: 4px;
     border: none;
     cursor: pointer;
+}
+.link-form{
+    color:rgba(33, 150, 243, 1);
+}
+.icon-form{
+    position: absolute;
+    bottom:11px;
+    left:12px;
+    width: 18px;
+    height: 18px;
+}
+.checkbox-form{
+    margin-top: 20px;
+}
+.input-form{
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+.input-form:focus{
+    border: 1px solid var(--logo-blue-color);
+}
+.input-form:focus + .icon-form{
+    fill:var(--logo-blue-color);
+}
+.text-form{
+    line-height: 1.16;        
+    letter-spacing: 0.01em;
+
+    margin-bottom:4px;
 }

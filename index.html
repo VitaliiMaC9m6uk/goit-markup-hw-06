@@ -357,36 +357,32 @@
             </svg>
           </button>
           <h2 class="titel-modal">Залиште свої дані, ми вам передзвонимо</h2>
-          <ul class="list">
-            <li class="list-form text-form">
-              <label for="name-form" class="">Ім'я</label>
-              <input type="text" id="name-form" name="name" class="name-form form-fild" />
-            </li>
-            <li class="list-form text-form">
-              <label for="tel-form" class="">Телефон</label>
-              <input type="tel" id="tel-form" name="tel" class="tel-form form-fild" />
-            </li>
-            <li class="list-form text-form">
-              <label for="mail-form" class="">Пошта</label>
-              <input type="email" id="mail-form" name="mail" class="mail-form form-fild" />
-            </li>
-            <li class="list-form text-form">
-              <label for="comment" class="">Коментар</label>
-              <textarea
-                name="comment"
-                id="comment"
-                cols="30"
-                rows="10"
-                placeholder="Введіть текст"
-                class="comment-form"
-              ></textarea>
-            </li>
-          </ul>
-          <div>
-            <input type="checkbox" id="checkbox" name="checkbox" class="" />       
-            <label for="checkbox" class="">Погоджуюся з розсилкою та приймаю Умови договору</label>            
-          </div>
-          <button type="button" class="btn-form">Відправити</button>
+          <form class="form">
+            <div class="form-person">
+              <span class="text-form">Ім'я</span>
+              <input type="text" name="name" class="input-form" />
+              <svg class="icon-form"><use href="./images/symbol-defs-second.svg#icon-person"></use></svg>
+            </div>
+            <div class="form-tel">
+              <span class="text-form">Телефон</span>
+              <input type="tel" name="tel" class="input-form" />
+              <svg class="icon-form"><use href="./images/symbol-defs-second.svg#icon-phone"></use></svg>
+            </div>
+            <div class="form-mail">
+              <span class="text-form">Пошта</span>
+              <input type="tel" name="tel" class="input-form" />
+              <svg class="icon-form"><use href="./images/symbol-defs-second.svg#icon-email"></use></svg>
+            </div>
+            <div class="form-comment">
+              <span class="text-form">Коментар</span>
+              <textarea name="comment" placeholder="Введіть текст" class="comment-form"></textarea>
+            </div>
+            <div>
+              <input type="checkbox" id="checkbox" name="checkbox" class="" />       
+              <label for="checkbox" class="">Погоджуюся з розсилкою та приймаю <a class="link-form" href="">Умови договору</a></label>            
+            </div>
+            <button type="button" class="btn-form">Відправити</button>
+          </form>
         </div>
       </div>
     </main>
