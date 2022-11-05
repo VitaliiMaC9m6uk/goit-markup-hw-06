@@ -795,12 +795,6 @@ img{
     position: relative;
     margin-bottom: 10px;
 }
-.text-form{    
-    font-size: 12px;
-    line-height:1.16;  
-    
-    letter-spacing: 0.01em;    
-}
 .list-form .form-fild{    
     height: 40px;
 
@@ -818,6 +812,13 @@ img{
     border-radius: 4px;
 
     resize: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 }
 .btn-form{
     transform: translate(-50%, -50%);
@@ -877,6 +878,7 @@ img{
 .text-form{
     line-height: 1.16;        
     letter-spacing: 0.01em;
+    font-size: 12px;
 
     margin-bottom:4px;
 }
